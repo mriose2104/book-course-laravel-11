@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\PrimerControlador;
+use App\Http\Controllers\Dashboard\PostControler;
 use Illuminate\Support\Facades\Route;
 
 
@@ -8,7 +8,7 @@ Route::get('/', function () {
     return  view("Welcome");
 });
 
-
+Route::resource('post', PostControler::class);
 
 
 
